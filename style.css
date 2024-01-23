@@ -37,12 +37,53 @@
 .heightimg {
     height: 100px;
 }
+.quote{
+    font-size: 50px;
+}
 .recommend {
     display: flex;
     justify-content:center;
     height: auto;
     background-color: lightblue;
 }
+.product {
+    display: inline-block;
+    text-align: center;
+}
+.product a {
+    display: block;
+    border: 2px solid #a82121;
+    margin: 10px;
+    padding: 10px;
+}
+.package-img {
+    width: 100%;
+    height: auto;
+}
+.product-text {
+    margin: 10px;
+    padding: 10px;
+}
+.viewproduct {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.viewproduct button {
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.viewproduct button:hover {
+    background-color: white;
+    color: #a82121;
+}
+
 @media(min-width: 991px) {
     .nav-link::before {
         content: "";
