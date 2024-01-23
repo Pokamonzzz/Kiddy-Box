@@ -2,7 +2,7 @@
     background-color: red;
     height: 80px;
     padding: 0.5rem;
-    z-index:2;
+    z-index: 2;
 }
 .navbar-brand {
     font-size: 24px;
@@ -26,6 +26,16 @@
 .nav-link:hover,
 .nav-link.active {
     color: #000;
+}
+.auto-carousel {
+    z-index: 20;
+    height: auto;
+    background-color: blue;
+    position: relative;
+    margin-top: 80px;
+}
+.heightimg {
+    height: 100px;
 }
 @media(min-width: 991px) {
     .nav-link::before {
