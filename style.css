@@ -37,6 +37,12 @@
 .heightimg {
     height: 100px;
 }
+.recommend {
+    display: flex;
+    justify-content:center;
+    height: auto;
+    background-color: lightblue;
+}
 @media(min-width: 991px) {
     .nav-link::before {
         content: "";
