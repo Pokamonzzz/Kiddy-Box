@@ -1,3 +1,6 @@
+.home {
+    background-color: #f0dde5;
+}
 .navbar {
     background-color: red;
     height: 80px;
@@ -26,6 +29,11 @@
 .nav-link:hover,
 .nav-link.active {
     color: #000;
+}
+.profile {
+    max-width: 30px;
+    height: auto;
+    padding-right: 10px;
 }
 .auto-carousel {
     z-index: 20;
