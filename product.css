@@ -1,6 +1,5 @@
 .home {
     background-color: #f0dde5;
-    padding-top: 80px;
 }
 .navbar {
     background-color: red;
@@ -58,13 +57,6 @@
 @media (max-width: 820px) {
     .navbar .navbar-brand.title {
         font-size: 20px; 
-    }
-    .product .tier {
-        font-size: 30px;
-    }
-    .custom .customise {
-        font-size: 25px;
-        margin-bottom: 20%;
     }
 }
 /* product page*/
