@@ -1,5 +1,6 @@
 .home {
     background-color: #f0dde5;
+    margin-top: 5%;
 }
 .navbar {
     background-color: red;
@@ -58,16 +59,33 @@
     .navbar .navbar-brand.title {
         font-size: 20px; 
     }
+    .home {
+        margin-top: 20%;
+    }
 }
 /* product page*/
 .tier {
     font-size: 50px;
-    text-align: center; 
+    text-align: center;
 }
-.card {
+/*.card {
     margin-top: 1%;
-}
+}*/
 .customise {
     font-style: italic;
     font-size: 45px;
+    align-items: center;
+}
+.cardc {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.body {
+    background-color: red;
+    height: 300px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
