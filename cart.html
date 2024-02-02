@@ -53,16 +53,68 @@
             </button>
             </div>
         </nav>
-        <section class="cart" style="margin-top: 8%; padding-left: 10%;">
-            <div class="cart-body">
+        <section class="cart">
+            <div class="cart-body" style="margin-top: 8%; padding-left: 10%;">
                 <div class="shopping" style="font-size: 35px; font-weight: bold;">
                     SHOPPING CART
                 </div>
-                <div class="items" style="margin-top: 2%;">
-                    <div class="itme1">
+                <div class="items" style="margin-top: 2%; display: flex; align-items: flex-start;">
+                    <div class="item-image">
                         <img src="Images/placholder.png" class="card-top img-fluid" alt="...">
+                    </div>
+                    <div class="item-details" style="margin-left: 10px;">
+                        <div class="item-name" style="font-size: 30px; font-weight: 500; margin-bottom: 25%; margin-top: -7%;">
+                            Item name
+                        </div>
+                        <div class="price" style="font-size: 20px; font-weight: 400; margin-bottom: 45%;">
+                            $1000
+                        </div>
+                        <div class="quantity" style="font-size: 18px;">
+                            Quantity
+                        </div>
+                    </div>
+                </div>
+                <div class="items" style="margin-top: 2%; display: flex; align-items: flex-start;">
+                    <div class="item-image">
+                        <img src="Images/placholder.png" class="card-top img-fluid" alt="...">
+                    </div>
+                    <div class="item-details" style="margin-left: 10px;">
+                        <div class="item-name" style="font-size: 30px; font-weight: 500; margin-bottom: 25%; margin-top: -7%;">
+                            Item name
+                        </div>
+                        <div class="price" style="font-size: 20px; font-weight: 400; margin-bottom: 45%;">
+                            $1000
+                        </div>
+                        <div class="quantity" style="font-size: 18px;">
+                            Quantity
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section>
+            <div class="subtotal" style="justify-content: right; display: flex; margin-top: 2%; margin-right: 5%;">
+                <div class="order" style="border: 2px solid blue; height: 300px; width: 300px; margin-right: 20px; display: flex; align-items: flex-start;">
+                    <div class="o-summary" style="height: 300px; margin-left: 2%; display: flex; flex-direction: column;">
+                        <span style="font-weight: 500; font-size: 20px;">ORDER SUMMARY</span>
+                        <span style="font-weight: 500; font-size: large;  margin-top: 50px;">SUBTOTAL</span>
+                        <span style="font-weight: 500; font-size: 15px;  margin-top: 50px;">COUPON</span>
+                        <span style="font-weight: 500; font-size: large;  margin-top: 50px;">TOTAL</span>
+                    </div>
+                    <div class="o-summary" style="height: 300px; display: flex; flex-direction: column; align-items: flex-end; margin-left: auto; margin-right: 2%;">
+                        <span style="font-weight: 500; font-size: 20px;">2 items</span>
+                        <span style="font-weight: 500; font-size: large;  margin-top: 50px;">$200</span>
+                        <span style="font-weight: 500; font-size: 15px;  margin-top: 50px;">-0%</span>
+                        <span style="font-weight: 500; font-size: large;  margin-top: 50px;">$200</span>
+                    </div>
+                </div>
+            </div>
+            <div class="coupon" style="margin-top: 1%; display: flex; justify-content: right; margin-right: 13%;">
+                <button type="button" class="btn btn-primary">coupon</button>
+            </div>
+            <div class="checkout-button" style="margin-top: auto; text-align: center; margin-top: 1%; margin-bottom: 1%;">
+                <button type="button" class="btn btn-primary">Checkout</button>
+            </div>
+        </section>
     </body>
+</html>
