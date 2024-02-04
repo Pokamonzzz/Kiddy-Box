@@ -366,3 +366,21 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
+#checkout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background-color: red;
+    z-index: 999;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s; /* Add smooth transition */
+}
+.check.show #checkout {
+    height: 100vh;
+}
