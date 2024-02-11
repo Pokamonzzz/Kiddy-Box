@@ -2,8 +2,11 @@
     background-color: #f0dde5;
     margin-top: 5%;
 }
+.logo {
+    height: 50px;
+}
 .navbar {
-    background-color: red;
+    background-color: rgb(255, 121, 206);
     height: 80px;
     padding: 0.5rem;
     z-index: 2;
