@@ -63,13 +63,19 @@
                     <form>
                         <h2>Login</h2>
                         <div class="input-box">
-                            <input type="email" placeholder="name@host.com">
-                            <i class="uil uil-envelope email"></i>
+                            <label for="email">Email</label>
+                            <div class="input-wrapper">
+                                <input type="email" placeholder="name@host.com" id="email">
+                                <i class="uil uil-envelope email"></i>
+                            </div>
                         </div>
                         <div class="input-box">
-                            <input type="password" placeholder="Password">
-                            <i class="uil uil-lock password"></i>
-                            <i class="uil uil-eye-slash pw-hide"></i>
+                            <label for="password">Password</label>
+                            <div class="input-wrapper">
+                                <input type="password" placeholder="Create Password" id="password">
+                                <i class="uil uil-lock password"></i>
+                                <i class="uil uil-eye-slash pw-hide"></i>
+                            </div>
                         </div>
                         <div class="option-field">
                             <span class="checkbox">
@@ -89,20 +95,29 @@
                     <form>
                         <h2>Sign Up</h2>
                         <div class="input-box">
-                            <input type="email" placeholder="name@host.com">
-                            <i class="uil uil-envelope email"></i>
+                            <label for="email">Email</label>
+                            <div class="input-wrapper">
+                                <input type="email" placeholder="name@host.com" id="email">
+                                <i class="uil uil-envelope email"></i>
+                            </div>
                         </div>
                         <div class="input-box">
-                            <input type="password" placeholder="Create Password">
-                            <i class="uil uil-lock password"></i>
-                            <i class="uil uil-eye-slash pw-hide"></i>
+                            <label for="password">Password</label>
+                            <div class="input-wrapper">
+                                <input type="password" placeholder="Create Password" id="password">
+                                <i class="uil uil-lock password"></i>
+                                <i class="uil uil-eye-slash pw-hide"></i>
+                            </div>
                         </div>
                         <div class="input-box">
-                            <input type="password" placeholder="Confirm Password">
-                            <i class="uil uil-lock password"></i>
-                            <i class="uil uil-eye-slash pw-hide"></i>
+                            <label for="password">Confirm Password</label>
+                            <div class="input-wrapper">
+                                <input type="password" placeholder="Confirm Password" id="password">
+                                <i class="uil uil-lock password"></i>
+                                <i class="uil uil-eye-slash pw-hide"></i>
+                            </div>
                         </div>
-                        <button class="button-log">Sign Up</button>
+                        <button class="button-log" id="sign-up">Sign Up</button>
                         <div class="signup">Already have an account?
                             <a href="#" id="login">Login</a>
                         </div>

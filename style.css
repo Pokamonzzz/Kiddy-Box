@@ -217,6 +217,7 @@
         margin-bottom: 10%;
     }
 }
+/* about page */
 .about {
     margin-top: 10%;
 }
@@ -275,6 +276,63 @@
     height: 100%; 
     margin-top: 2%;
 }
+/*feedback*/
+.feedback {
+    display: flex;
+    justify-content: center;
+}
+.feedback-cont {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    justify-content: center;
+    width: 100%;
+}
+.input {
+    width: 100%;
+}
+.feedback-body {
+    width: 100%;
+}
+.feedback-header {
+    font-size: 50px;
+    font-weight: 600;
+}
+.feedback-item {
+    text-align: center;
+}
+#name, #email, #Comments{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+#name, #email {
+    height: 50px;
+}
+#Comments {
+    height: 100px;
+}
+.input label {
+    font-size: 20px;
+    font-weight: 500;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+.submit {
+    margin: 10px auto 10px;
+    display: flex;
+    height: 40px;
+    font-size: larger;
+    width: 100px;
+    justify-content: center;
+}
+/*cart page*/
 .body {
     background-color: red;
     height: auto;
@@ -440,7 +498,7 @@
 }
 .input-box i{
     position: absolute;
-    top: 50%;
+    top: 80%;
     transform: translateY(-50%);
     font-size: 20px;
     transition: all 0.3s ease;
