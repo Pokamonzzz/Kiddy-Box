@@ -17,37 +17,24 @@ function closenav() {
     dropdown.style.height = "0";
 }
 
-const formOpenbtn = document.querySelector("#form-open");
-const login = document.querySelector(".login");
-const formCont = document.querySelector(".form-cont");
-const formClosebtn = document.querySelector(".form-close");
-const signupBtn = document.querySelector("#signup");
-const loginBtn = document.querySelector("#login");
-const pwShowHide = document.querySelectorAll(".pw-hide");
 
-formOpenbtn.addEventListener("click",() => login.classList.add("shows"));
-formClosebtn.addEventListener("click",() => login.classList.remove("shows"));
+document.addEventListener("DOMContentLoaded", function () {
+    const feedbackForm = document.getElementById("feedback-form");
+    const lottieContainer = document.getElementById("lottie");
 
-signupBtn.addEventListener("click", (sign) => {
-    sign.preventDefault();
-    formCont.classList.add("actives");
-});
-loginBtn.addEventListener("click", (sign) => {
-    sign.preventDefault();
-    formCont.classList.remove("actives");
-});
+    feedbackForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        
+        // Show the Lottie animation
+        lottieContainer.classList.add("shows");
 
-pwShowHide.forEach(icon => {
-    icon.addEventListener("click", () => {
-        let getPwInput = icon.parentElement.querySelector("input");
-        if (getPwInput.type === "password") {
-            getPwInput.type = "text";
-            icon.classList.replace("uil-eye-slash", "uil-eye");
-        } else {
-            getPwInput.type = "password";
-            icon.classList.replace("uil-eye", "uil-eye-slash");
-        }
+        // Hide the Lottie animation after 3 seconds
+        setTimeout(function () {
+            lottieContainer.classList.remove("shows");
+        }, 4000);
+
+        // Here you can add your code to submit the form data
+        // For example, you can use fetch or XMLHttpRequest to send the data to your server
     });
 });
-
 

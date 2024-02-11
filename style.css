@@ -303,7 +303,7 @@
 .feedback-item {
     text-align: center;
 }
-#name, #email, #Comments{
+#name, #email-about, #Comments{
     width: 80%;
     display: flex;
     align-items: center;
@@ -311,7 +311,7 @@
     margin: 0 auto;
     border-radius: 10px;
 }
-#name, #email {
+#name, #email-about {
     height: 50px;
 }
 #Comments {
@@ -331,6 +331,14 @@
     font-size: larger;
     width: 100px;
     justify-content: center;
+}
+#lottie {
+    position: absolute;
+    display: none;
+    z-index: 1111;
+}
+#lottie.shows {
+    display: block;
 }
 /*cart page*/
 .body {
@@ -449,7 +457,7 @@
 .check.show #checkout {
     height: 100vh;
 }
-/*form*/
+/*login*/
 .form-cont {
     position: absolute;
     max-width: 320px;
