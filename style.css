@@ -445,7 +445,7 @@
     left: 0;
     height: 0;
     width: 100%;
-    background-color: red;
+    background-color: rgb(255, 201, 201);
     z-index: 999;
     overflow: hidden;
     display: flex;

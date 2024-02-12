@@ -120,7 +120,31 @@
         </section>
         <div id="checkout" class="check">
             <div id="checkout-cont">
-                <button type="button" class="btn btn-primary" onclick="closenav()">Close</button>
+                <div class="checkout-header" style="font-size: 20px; font-weight: 500;">
+                    Checkout
+                </div>
+                <form class="credit-card-form">
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" class="form-control" id="card-number" placeholder="Enter card number">
+                    </div>
+                    <div class="form-group">
+                        <label for="card-holder">Card Holder</label>
+                        <input type="text" class="form-control" id="card-holder" placeholder="Enter card holder name">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="expiry-date">Expiry Date</label>
+                            <input type="text" class="form-control" id="expiry-date" placeholder="MM/YY">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cvv">CVV</label>
+                            <input type="text" class="form-control" id="cvv" placeholder="Enter CVV">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="margin-top: 3%;">Pay Now</button>
+                </form>
+                <button type="button" class="btn btn-primary" onclick="closenav()" style="margin-top: 3%;">Close</button>
             </div>
         </div>
         <script src="javascript.js"></script>

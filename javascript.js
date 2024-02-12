@@ -22,19 +22,76 @@ document.addEventListener("DOMContentLoaded", function () {
     const feedbackForm = document.getElementById("feedback-form");
     const lottieContainer = document.getElementById("lottie");
 
-    feedbackForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        
-        // Show the Lottie animation
+    // Function to show the Lottie animation
+    function showLottieAnimation() {
         lottieContainer.classList.add("shows");
-
-        // Hide the Lottie animation after 3 seconds
         setTimeout(function () {
             lottieContainer.classList.remove("shows");
         }, 4000);
+    }
 
-        // Here you can add your code to submit the form data
-        // For example, you can use fetch or XMLHttpRequest to send the data to your server
+    // Add event listener to the submit button to trigger animation
+    document.getElementById("send-button").addEventListener("click", function (e) {
+        e.preventDefault();
+        
+        // Show the Lottie animation
+        showLottieAnimation();
+    });
+
+    // Add event listener to form to prevent default form submission
+    feedbackForm.addEventListener("submit", function (e) {
+        e.preventDefault();
     });
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const APIKEY = "65936c07e98eb10765ce0164";
+    document.getElementById("send-button").addEventListener("click", function (e) {
+
+        e.preventDefault();
+        
+        let Name = document.getElementById("name").value;
+        let Email = document.getElementById("email-about").value;
+        let comments = document.getElementById("Comments").value;
+
+        let jsondata = {
+            "Name": Name,
+            "Email": Email,
+            "comments": comments
+        };
+
+        let settings = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "x-apikey": APIKEY,
+                "Cache-Control": "no-cache"
+            },
+            body: JSON.stringify(jsondata),
+            beforeSend: function () {
+                document.getElementById("send-button").disabled = true;
+                // Clear our form using the form ID and triggering its reset feature
+                document.getElementById("feedback-form").reset();
+            }
+        }
+        fetch("https://interactivedev-10a5.restdb.io/rest/accounts", settings)
+            //inform problem with network
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+                document.getElementById("send-button").disabled = false;
+            })
+            //inform problem with input
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+                alert("There was an error processing your request. Please try again later or check if input in the valid data.");
+                document.getElementById("send-button").disabled = false;
+            });
+    });
+});
