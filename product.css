@@ -81,6 +81,10 @@
     font-size: 50px;
     text-align: center;
 }
+.price {
+    font-size: 30px;
+    text-align: center;
+}
 /*.card {
     margin-top: 1%;
 }*/
@@ -90,9 +94,14 @@
     align-items: center;
 }
 .body-tier {
-    background-color: blue;
+    border: 5px solid  rgb(247, 203, 203);
     display: flex;
     flex-direction: column;
+}
+.body-tier img{
+    width: auto;
+    height: 180px;
+    object-fit: cover;
 }
 .cardc {
     display: flex;
@@ -100,12 +109,18 @@
     width: 100%;
 }
 .body {
-    background-color: red;
+    background-color: transparent;
     height: 320px;
     width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px solid  rgb(215, 142, 142);
+}
+.body img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
 }
 .card-text {
     text-align: center;
