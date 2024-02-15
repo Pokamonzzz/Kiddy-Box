@@ -10,7 +10,7 @@ function togglenav() {
         dropdown.style.height = "0";
     }
 }
-
+// close the nav
 function closenav() {
     var dropdown = document.getElementById("checkout");
     dropdown.classList.remove('show');
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "Email": Email,
             "comments": comments
         };
-
+        // send the data to the database
         let settings = {
             method: "POST",
             headers: {
