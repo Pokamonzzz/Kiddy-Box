@@ -44,6 +44,7 @@ For the wireframe I just came up and did it as i did the coding.
     - HTML
     - CSS
     - Javascript
+    - Bootstrap
 
 2. Api used
     - RestDB https://restdb.io/
